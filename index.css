@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+} 
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("/images/ferks-guare-KEZdWfYD-ow-unsplash.jpg");
+    background-size: cover;
+    height: 160px;
+    background-repeat: no-repeat;
+    padding-left: 46px;
+    padding-top: 10px;
+    background-position-x: 50%;
+    background-position-y: 70%;
+    margin-bottom: 30px;
+
+}
+
+
+/* ==== Typography ==== */
+h1, p {
+    color: #fff;
+}
+
+h1 {
+    font-size: 40px;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3, .price, .total-price {
+   font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 26px;
+    padding-top: 0;
+}
+
+/* ==== Menu ==== */
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #D2D2D2;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 50px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.food-emoji {
+    font-size: 80px;
+    padding-right: 31px;
+   
+}
+
+.food-emoji, h4, .remove-btn {
+    opacity: 0.5;  
+}
+
+.food-details {
+    line-height: 7px;
+}
+
+.add-btn {
+   background-color: transparent;
+   height: 50px;
+   width: 50px;
+   border: #DEDEDE solid 1.5px;
+   border-radius: 50%;
+   font-size: 20px;
+   margin-right: 57px;
+   font-size: 27px;
+   font-family: 'Inter', sans-serif;
+   font-weight: 200;
+}
+
+.add-btn:hover {
+    background-color: #DEDEDE;
+}
+
+
+/* ==== Summary of order with price ==== */
+
+.checkout-title {
+    text-align: center;
+    padding-top: 0;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-ordered-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-container {
+    display: flex;
+}
+
+.total-price-container {
+    border-top: 1px solid #393333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ==== Checkout buttons ==== */
+
+.remove-btn {
+    display: inline;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+}
+
+.remove-btn:hover,
+.remove-btn:focus {
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.complete-order-btn {
+    margin: 50px 46px;
+}
+
+.complete-order-btn:hover,
+.complete-order-btn:focus {
+    background-color: #096949;
+    cursor: pointer;
+}
+
+
+.green-btn {
+    background-color: #16DB99;
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    border: none;
+    padding: 18px 185px;
+    white-space: nowrap;
+}
+
+
+/* ==== Payment Modal ====*/
+
+.payment-modal {
+    display: block;
+    position: fixed;
+    right: 0; 
+    left:0 ;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 542px;
+    max-width: 524px;
+    border-radius: 3px;
+    text-align: center;
+    border: none;
+    box-shadow: 0px -13px 42px 48px rgba(0,0,0,0.42);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #fff;
+
+}
+
+.payment-modal-inner {
+    margin: 0 auto;
+    width: 475px;
+}
+
+input{
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    border: 1px solid #212529;
+    padding: 10px;
+    width: 475px;
+    height: 71px;
+    border-radius: 3px;
+    }
+
+/* ==== Modal Buttons ==== */
+
+.modal-close-btn {
+    font-size: 20px;
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 1px transparent;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    color: #92b3a8;
+}
+
+.modal-close-btn-container {
+    text-align: right;
+    margin: 10px;
+}
+
+.pay-btn {
+    width: 475px;
+    height: 71px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px auto 30px;
+}
+
+.pay-btn:hover,
+.pay-btn-focus {
+    background-color: #096949;
+    cursor: pointer;
+}
+
+/* ==== Purchase confirmation ==== */
+.order-notification-container {
+    background-color: #ECFDF5;
+    color: #065F46;
+    border: none;
+    height: 120px;
+    width: 504px;
+    margin: 45px auto;
+    text-align: center;
+    padding: 55px 40px 30px 40px;
+}
+
+
+/* ==== utility ==== */
+.hidden {
+    display: none;
+}
